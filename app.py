@@ -25,4 +25,3 @@ if query:
     for i in I[0]:
         st.markdown(f"**Chunk {i}:**")
         st.write(chunks[i])
-``
