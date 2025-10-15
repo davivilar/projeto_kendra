@@ -61,4 +61,4 @@ if query:
     # 🤖 Gerar resposta com OpenAI
     if openai.api_key:
         contexto = "\n".join(resultados)
-        prompt = f"Com base no seguinte conteúdo, responda à pergunta:\n\n{contexto}\n\nPergunta:
+        prompt = f"Com base no seguinte conteúdo, responda à pergunta:\n\n{contexto}\n\nPergunta: {query}"
