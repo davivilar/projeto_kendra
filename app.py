@@ -24,7 +24,7 @@ except Exception as e:
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # 🔐 Configurar OpenAI
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = os.getenv("API_OPENAI")
 
 # 🕘 Inicializar histórico
 if "historico" not in st.session_state:
@@ -62,3 +62,4 @@ if query:
     if openai.api_key:
         contexto = "\n".join(resultados)
         prompt = f"Com base no seguinte conteúdo, responda à pergunta:\n\n{contexto}\n\nPergunta: {query}"
+
